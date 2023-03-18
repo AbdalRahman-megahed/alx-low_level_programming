@@ -11,10 +11,16 @@ int main(void)
 {
   /*main*/
 char n = 'a';
-if (n <= 'z')
+while (n <= 'z')
+{
+if (n == 'q' || n == 'e')
+{
+}
+else
 {
 putchar(n);
 n++;
+}
 }
 putchar('\n');
 return (0);
