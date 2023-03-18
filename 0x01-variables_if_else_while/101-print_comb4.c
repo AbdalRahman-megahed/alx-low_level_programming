@@ -20,6 +20,7 @@ if (n < x && x < y)
 {
 putchar(n + '0');
 putchar(x + '0');
+putchar(y + '0');
 if (x + n + y != 24)
 {
 putchar(',');
