@@ -1,0 +1,34 @@
+#include <stdio.h>
+#include <time.h>
+#include <stdlib.h>
+/**
+11;rgb:0000/0000/0000* main - Entry point
+ * Description: 'the program's description'
+ * Return: Always 0 (Success)
+ */
+
+int main(void)
+{
+int n, x, y;
+for (n = 0; n < 8; n++)
+{
+for (x = 1; x < 9; x++)
+{
+for(y = 2; y < 10; y++)
+{
+if (x < n < y)
+{
+putchar(n + '0');
+putchar(x + '0');
+if (x + n + y != 24)
+{
+putchar(',');
+putchar(' ');
+}
+}
+}
+}
+}
+putchar('\n');
+return (0);
+}
