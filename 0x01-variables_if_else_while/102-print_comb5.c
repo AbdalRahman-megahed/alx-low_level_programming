@@ -18,8 +18,10 @@ for (y = n; y < 10; y++)
 {
 for (z = 0; z < 10; z++)
 {
-if(n + x < y + z)
-{
+if(n == y && x == z)
+continue;
+if (n + x > y + z)
+continue;
 putchar(n + '0');
 putchar(x + '0');
 putchar(' ');
@@ -27,7 +29,6 @@ putchar(y + '0');
 putchar(z + '0');
 putchar(',');
 putchar(' ');
-}
 }  
 }
 }
