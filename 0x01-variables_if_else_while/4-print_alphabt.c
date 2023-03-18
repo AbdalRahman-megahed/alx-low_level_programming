@@ -13,13 +13,13 @@ int main(void)
 char n = 'a';
 while (n <= 'z')
 {
-if (n == 'q' || n == 'e')
-{
-}
-else
+if (n != 'q' && n != 'e')
 {
 putchar(n);
 n++;
+}
+else
+{
 }
 }
 putchar('\n');
