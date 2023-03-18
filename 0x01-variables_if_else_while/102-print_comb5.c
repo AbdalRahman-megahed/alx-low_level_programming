@@ -12,13 +12,13 @@ int main(void)
 int n, x, y, z;
 for (n = 0; n < 10; n++)
 {
-for (x = 0; x < 9; x++)
+for (x = 0; x < 10; x++)
 {
 for (y = n; y < 10; y++)
 {
 for (z = 0; z < 10; z++)
 {
-if(n == y && x == z)
+if (n == y && x == z)
 continue;
 if (n + x > y + z)
 continue;
@@ -27,6 +27,8 @@ putchar(x + '0');
 putchar(' ');
 putchar(y + '0');
 putchar(z + '0');
+if (n + x + z + y == 35)
+continue;
 putchar(',');
 putchar(' ');
 }  
