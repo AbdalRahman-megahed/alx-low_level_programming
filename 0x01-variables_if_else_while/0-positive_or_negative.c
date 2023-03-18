@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <time.h>
+#include <stdlib.h>
 
 int main()
 {
@@ -12,7 +13,7 @@ int main()
     }
   else if( n < 0 )
     {
-      printf("%i is positive", n);
+      printf("%i is negative", n);
     }
   else
     {
