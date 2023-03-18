@@ -19,11 +19,11 @@ if (x != n && n < x)
 {
 putchar(n + '0');
 putchar(x + '0');
+if (x + n != 17)
+{
 putchar(',');
 putchar(' ');
 }
-else
-{
 }
 }
 }
