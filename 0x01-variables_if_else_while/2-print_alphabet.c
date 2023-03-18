@@ -10,8 +10,8 @@
 int main(void)
 {
   /*main*/
-char n = "a";
-while(n < "z")
+char n = 'a';
+while(n < 'z')
 {
 putchar(n);
 n++;
