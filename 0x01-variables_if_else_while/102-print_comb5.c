@@ -9,30 +9,20 @@
 
 int main(void)
 {
-int n, x, y, z;
-for (n = 0; n < 10; n++)
+int a, b;
+for (a = 0; a < 99; a++)
 {
-for (x = 0; x < 10; x++)
+for (b = a + 1; b < 100; b++)
 {
-for (y = n; y < 10; y++)
-{
-for (z = 0; z < 10; z++)
-{
-if (n == y && x == z)
-continue;
-if (n + x > y + z)
-continue;
-putchar(n + '0');
-putchar(x + '0');
+putchar((a / 10) + '0');
+putchar((a % 10) + '0');
 putchar(' ');
-putchar(y + '0');
-putchar(z + '0');
-if (n + x + z + y == 35)
+putchar((b / 10) + '0');
+putchar((b % 10) + '0');
+if (a == 98 && b == 99)
 continue;
 putchar(',');
 putchar(' ');
-}  
-}
 }
 }
 putchar('\n');
