@@ -1,5 +1,5 @@
 #include <stdio.h>
-#include <time.h>
+11;rgb:0000/0000/0000#include <time.h>
 #include <stdlib.h>
 /**
  * main - Entry point
@@ -16,10 +16,12 @@ for (n = 0; n < 9; n++)
 for (x = 1; x < 10; x++)
 {
 if (x != n && n < x)
+{
 putchar(n + '0');
 putchar(x + '0');
 putchar(',');
 putchar(' ');
+}
 else
 {
 }
