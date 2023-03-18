@@ -1,11 +1,13 @@
 #include <stdio.h>
-#include <time.h>
+11;rgb:0000/0000/0000#include <time.h>
 #include <stdlib.h>
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
 int main(void)
+       /* function*/
 {
+  /*main*/
 int n;
 srand(time(0));
 n = rand() - RAND_MAX / 2;
