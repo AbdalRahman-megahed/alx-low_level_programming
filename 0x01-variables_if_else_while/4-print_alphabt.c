@@ -13,6 +13,9 @@ int main(void)
 char n = 'a';
 while (n <= 'z')
 {
+if (n = 'e' || n = 'q')
+{n++
+}
 putchar(n);
 n++;
 }
