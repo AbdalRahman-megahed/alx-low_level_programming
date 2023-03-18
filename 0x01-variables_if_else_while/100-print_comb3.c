@@ -20,6 +20,9 @@ putchar(n + '0');
 putchar(x + '0');
 putchar(',');
 putchar(' ');
+else
+{
+}
 }
 }
 }
