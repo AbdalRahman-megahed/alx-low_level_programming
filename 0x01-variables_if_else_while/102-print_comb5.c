@@ -9,14 +9,16 @@
 
 int main(void)
 {
-int n, x, y,z;
-for (n =0; n < 10; n++)
+int n, x, y, z;
+for (n = 0; n < 10; n++)
 {
-for (x =0; x < 9; x++)
+for (x = 0; x < 9; x++)
 {
 for (y = n; y < 10; y++)
 {
-for (z = x + 1; z < 10; z++)
+for (z = 0; z < 10; z++)
+{
+if(n + x < y + z)
 {
 putchar(n + '0');
 putchar(x + '0');
@@ -25,6 +27,7 @@ putchar(y + '0');
 putchar(z + '0');
 putchar(',');
 putchar(' ');
+}
 }  
 }
 }
