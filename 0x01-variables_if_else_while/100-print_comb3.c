@@ -16,12 +16,9 @@ for (n = 0; n < 9; n++)
 for (x = 1; x < 10; x++)
 {
 if (x != n && n < x)
-{
 putchar(n + '0');
 putchar(x + '0');
 putchar(',');
 putchar(' ');
-}
-}
 }
 }
