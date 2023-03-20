@@ -9,22 +9,39 @@
 
 int main(void)
 {
-int a, b;
-for (a = 0; a < 99; a++)
+int n, x, y, z;
+for (n = 0; n < 10; n++)
 {
-for (b = a + 1; b < 100; b++)
+for (x = 0; x < 10; x++)
 {
-putchar((a / 10) + '0');
-putchar((a % 10) + '0');
-putchar(' ');
-putchar((b / 10) + '0');
-putchar((b % 10) + '0');
-if (a == 98 && b == 99)
+for (y = 0; y < 10; y++)
+{
+for (z = 0; z < 10; z++)
+{
+if (n + x < y + z && n <= y)
+{
+// never print again 00 00 or 55 55
+if (n == y && x == z)
 continue;
+putchar(n + '0');
+// the last print 98 99
+if (n + y + z + x == 36 )
+continue;
+putchar(x + '0');
+putchar(' ');
+putchar(y + '0');
+putchar(z + '0');
+// never print the last , 
+if (n + y + z + x == 35 && x == 8)
+continue;
+{
 putchar(',');
 putchar(' ');
 }
 }
-putchar('\n');
+}
+}
+}    
+}            
 return (0);
 }
