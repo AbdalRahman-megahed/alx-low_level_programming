@@ -18,7 +18,7 @@ for (y = 0; y < 10; y++)
 {
 for (z = 0; z < 10; z++)
 {
-if (n + x < y + z && n <= y)
+if (n + x <= y + z)
 {
 /*never print again 00 00 or 55 55*/
 if (n == y && x == z)
