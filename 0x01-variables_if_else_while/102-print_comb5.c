@@ -20,18 +20,18 @@ for (z = 0; z < 10; z++)
 {
 if (n + x < y + z && n <= y)
 {
-// never print again 00 00 or 55 55
+/*never print again 00 00 or 55 55*/
 if (n == y && x == z)
 continue;
 putchar(n + '0');
-// the last print 98 99
+/* the last print 98 99*/
 if (n + y + z + x == 36 )
 continue;
 putchar(x + '0');
 putchar(' ');
 putchar(y + '0');
 putchar(z + '0');
-// never print the last , 
+/* never print the last ,*/ 
 if (n + y + z + x == 35 && x == 8)
 continue;
 {
