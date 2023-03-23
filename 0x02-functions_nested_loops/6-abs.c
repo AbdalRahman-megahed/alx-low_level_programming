@@ -1,5 +1,5 @@
 #include "main.h"
-11;rgb:0000/0000/0000
+
 /**
 * _abs - computes the absolute value of an integer
 * @n: the int to check
