@@ -15,20 +15,20 @@ x = row * cln;
 if (x >= 10)
 {
 y = x / 10;
-putchar(y + '0');
+_putchar(y + '0');
 }
-putchar(x % 10 + '0');
+_putchar(x % 10 + '0');
 if (cln < 9)
 {
-putchar(',');
-putchar(' ');
+_putchar(',');
+_putchar(' ');
 x = row * (cln + 1);
 if (x >= 10)
 continue;
-putchar(' ');
+_putchar(' ');
 }
 if (cln == 9)
-putchar('\n');
+_putchar('\n');
 }
 }
 }
