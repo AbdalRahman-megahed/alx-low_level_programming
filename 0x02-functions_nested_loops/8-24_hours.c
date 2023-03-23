@@ -1,5 +1,5 @@
 #include "main.h"
-
+11;rgb:0000/0000/0000
 /**
 * jack_bauer - prints every minute of the day of Jack Bauer
 * starting from 00:00 to 23:59
@@ -14,7 +14,7 @@ for (b = 0; b < 10; b++)
 if (b >= 4 && a == 2)
 continue;
 for (c = 0; c < 6; c++)
-{    
+
 for (d = 0; d < 10; d++)
 {
 _putchar(a + '0');
