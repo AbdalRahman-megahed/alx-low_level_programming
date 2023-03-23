@@ -9,7 +9,7 @@ void jack_bauer(void)
 int a, b, c, d;
 for (a = 0; a < 3; a++)
 {
-for (b =0; b < 10; b++)
+for (b = 0; b < 10; b++)
 {
 if (b >= 4 && a == 2)
 continue;
