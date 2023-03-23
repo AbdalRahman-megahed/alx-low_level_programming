@@ -9,15 +9,15 @@
 
 int print_sign(int n)
 {
-for (n > 0)
+if (n > 0)
 {
 _putchar('+');
 }
-for (n = 0)
+if (n = 0)
 {
 _putchar('0');
 }
-for (n < 0)
+if (n < 0)
 {
 _putchar('-');
 }
