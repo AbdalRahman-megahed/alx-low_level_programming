@@ -14,9 +14,9 @@ a = n % 10;
 }
 else if (n < 0)
 {
-n =-n;
+n = -n;
 a = n % 10;
 }
-_putchar(a +48);
+_putchar(a + 48);
 return (a);
 }
