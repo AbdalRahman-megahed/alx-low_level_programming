@@ -9,7 +9,7 @@ int y, cln, row, x;
 for (row = 0; row <= 9; row++)
 {
 x = 0;
-for (cln = 0; cln <= 9; cln ++)
+for (cln = 0; cln <= 9; cln++)
 {
 x = row * cln;
 if (x >= 10)
