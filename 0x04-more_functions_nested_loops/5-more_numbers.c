@@ -11,9 +11,12 @@ int i, c;
    {
      for (c = 0; c <= 14; c++)
        {
-	 putchar(c / 10 + '0');
-	 putchar(c % 10 + '0');
+	 if (c >= 10)
+	   {
+	     _putchar(c / 10 + '0');
+	   }
+	 _putchar(c % 10 + '0');
        }
-     putchar('\n');
+     _putchar('\n');
    }
 }
