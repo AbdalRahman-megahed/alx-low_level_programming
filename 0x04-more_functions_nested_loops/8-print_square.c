@@ -6,9 +6,9 @@
 void print_square(int size)
 {
   int i, c;
-  for (i = 0; i < 10; i++)
+  for (i = 0; i < size; i++)
     {
-      for (c = 0; c < 10; c++)
+      for (c = 0; c < size; c++)
 	{
 	  if (n <= 0)
 	    continue;
