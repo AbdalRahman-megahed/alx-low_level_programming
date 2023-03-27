@@ -12,9 +12,11 @@ while (*s != '\0')
 s++;
 c++;
 }
+s--;
 while (c != 0)
 {
-_putchar(--*s);
+_putchar(*s);
+s--;
 c--;
 }
 _putchar('\n');
