@@ -14,7 +14,7 @@ while (*str != '\0')
 str++;
 i++;
 }
-for (c = 0; c < (i/2); c++)
+for (c = 0; c < (i / 2); c++)
 {
 str--;
 }
