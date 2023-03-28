@@ -1,5 +1,5 @@
 #include "main.h"
-/**
+11;rgb:0000/0000/0000/**
 * puts_half - a function that prints half of a string
 * if odd len, n = (length_of_the_string - 1) / 2
 * @str: input
@@ -24,5 +24,5 @@ while (*str != '\0')
 _putchar(*str);
 str++;
 }
-_putchar('\n')
+ _putchar('\n');
 }
