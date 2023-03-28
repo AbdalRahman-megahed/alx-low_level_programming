@@ -7,7 +7,8 @@
 */
 void puts2(char *str)
 {
-while (*str != '\\')
+if (*str != '\\' && ++*s != '0')
+while (*str != '\0')
 {
 _putchar(*str);
 str++;
