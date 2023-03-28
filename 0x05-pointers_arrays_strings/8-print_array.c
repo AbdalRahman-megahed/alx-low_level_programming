@@ -12,8 +12,6 @@ int i;
 for (i = 0; i < n; i++)
 {
 printf("%d", a[i]);
-if (i + 1 == n)
-continue;
 _putchar(',');
 _putchar(' ');
 }
