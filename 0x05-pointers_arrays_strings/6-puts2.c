@@ -1,17 +1,23 @@
 #include "main.h"
 /**
-* puts2 - function should print only one character out of two
-* starting with the first one
-* @str: input
-* Return: print
-*/
-void puts2(char *str)
+ * print_rev - imprime en reversa
+ * @s: string
+ * return: 0
+ */
+void print_rev(char *s)
 {
-while (*str != '\0')
+int longi = 0;
+int o;
+while (*s != '\0')
 {
-_putchar(*str);
-str++;
-str++;
+longi++;
+s++;
+}
+s--;
+for (o = longi; o > 0; o--)
+{
+_putchar(*s);
+s--;
 }
 _putchar('\n');
 }
