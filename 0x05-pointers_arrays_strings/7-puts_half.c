@@ -7,7 +7,6 @@
 */
 void puts_half(char *str)
 {
-char *str;
 int c = 0;
 int i = 0;
 str = "0123456789";
@@ -22,7 +21,8 @@ str--;
 }
 while (*str != '\0')
 {
-putchar(str + '0');
+_putchar(str + '0');
 str++;
 }
+_putchar('\n')
 }
