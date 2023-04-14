@@ -7,15 +7,17 @@
 void reverse_array(int *a, int n)
 {
 	int *p, i = 0, c = n - 1;
-	while (i < n)
+	
+	while (*a)
 	{
-		p[i] = a[i];
-		i++;
+		*p = *a;
+		a++;
+		p++;
 	}
-	while (c >= 0)
+	while (*a)
 	{
-		i = 0;
 		a[i] = p[c];
+		i++;
 		c--;
 	}
 }
