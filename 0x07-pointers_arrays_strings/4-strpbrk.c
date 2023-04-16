@@ -6,7 +6,7 @@
  * @accept: The detector.
  * Return: returns pointer.
  */
-char *_strpbrk(char *s, char *accept);
+char *_strpbrk(char *s, char *accept)
 {
 	char *ref = accept;
 
