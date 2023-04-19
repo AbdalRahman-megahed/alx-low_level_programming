@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stddef.h>
 /**
  * _strstr - matching words.
  * @needle: the word to be matched.
@@ -7,20 +8,25 @@
  */
 char *_strstr(char *haystack, char *needle)
 {
-	char some_checker;
-
+	int signal;
+	char *p = needle;
 	while (*needle)
 	{
 		if (*haystack == *needle)
 		{
-			some_checker = 1;
 			needle++;
+			signal = 1;
 		}
 		else
 		{
-			some_checker = '\0';
+			signal = 0;
 		}
 		haystack++;
 	}
-	return (some_checker);
+	if (signal == 1)
+	{
+		*needle = *p;
+		return (needle);
+	}
+	return (NULL);
 }
