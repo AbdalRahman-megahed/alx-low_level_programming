@@ -5,7 +5,7 @@
  * Return: the whole number.
  */
 
-int some_help(a, b)
+int some_help(int a, int b)
 {
 	if ((a * a) == b)
 		return (a);
@@ -22,5 +22,5 @@ int _sqrt_recursion(int n)
 	if (n < 0)
 		return (-1);
 	else
-		return `(some_help(0, n));
+		return (some_help(0, n));
 }
