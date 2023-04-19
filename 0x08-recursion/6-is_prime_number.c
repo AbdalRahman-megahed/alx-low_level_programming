@@ -7,9 +7,9 @@
  * Return: depends on the condition.
  */
 
-int _some_function (int a, int b,int n)
+int _some_function(int a, int b, int n)
 {
-	if (n == 1 || (a * b) == n)
+	if (n < 0 || n == 1 || (a * b) == n)
 	{
 		return (0);
 	}
@@ -40,5 +40,5 @@ int _some_function (int a, int b,int n)
 
 int is_prime_number(int n)
 {
-	return (_some_function (1, n - 1, n));
+	return (_some_function(1, n - 1, n));
 }
