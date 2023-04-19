@@ -1,32 +1,30 @@
 #include "main.h"
-#include <stddef.h>
+#include <stdio.h>
+
 /**
- * _strstr - matching words.
- * @needle: the word to be matched.
- * @haystack: the statement to be scanned.
- * Returns: a pointer to the beginning of the located substring.
+ * _strstr -  a function that locates a substring.
+ * @haystack: an input string to search in
+ * @needle: an input string to locate into string haystack
+ * Return:  a pointer to the beginning of the located substring,
+ * or NULL if the substring is not found.
  */
 char *_strstr(char *haystack, char *needle)
 {
-	int signal;
-	char *p = needle;
-	while (*needle)
+	char *startn = needle, *starth = haystack;
+
+	while (*haystack)
 	{
-		if (*haystack == *needle)
+		starth = haystack;
+		needle = startn;
+		while (*haystack == *needle)
 		{
+			haystack++;
 			needle++;
-			signal = 1;
 		}
-		else
-		{
-			signal = 0;
-		}
-		haystack++;
-	}
-	if (signal == 1)
-	{
-		*needle = *p;
-		return (needle);
+
+		if (*needle == '\0')
+			return (haystack);
+		haystack = starth + 1;
 	}
 	return (NULL);
 }
