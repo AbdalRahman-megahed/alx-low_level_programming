@@ -2,7 +2,8 @@
 /**
  * factorial - a function that returns the factorial of a given number.
  * @n: the number we try to calc factorial of.
- * Return: If @n is lower than 0, the function should return -1 to indicate an error.
+ * Return: If @n is lower than 0
+ *  the function should return -1 to indicate an error.
  */
 
 int factorial(int n)
