@@ -1,10 +1,5 @@
 #include <stdio.h>
 #include <stdlib.h>
-
-/**
- * _i
- */
-
 /**
 * main - prints the program name.
 * @argc: int.
