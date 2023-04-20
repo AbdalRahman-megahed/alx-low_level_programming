@@ -5,5 +5,6 @@
 int main(int argc, char *argv[])
 {
 	printf("%s", argv[argc - 1]);
-	return;
+	_putchar('\n');
+	return 0;
 }
