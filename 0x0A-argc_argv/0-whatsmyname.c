@@ -1,5 +1,9 @@
 #include "main.h"
-/** this program prints the name of itself
+/**
+ * main - prints the program name.
+ * @argc: int.
+ * @argv: list.
+ * Return: 0.
  */
 int main(int argc, char *argv[])
 {
@@ -7,5 +11,5 @@ int main(int argc, char *argv[])
 
 	_putchar(*p);
 	_putchar('\n');
-	return 0;
+	return (0);
 }
