@@ -9,17 +9,17 @@
 char *_strdup(char *str)
 {
 	char *ar;
-	int str_size = 0, i = 0;
+	int str_size = 1, i = 0;
 
 	if (str == NULL)
-        {
-                return (NULL);
-        }
+	{
+		return (NULL);
+	}
 	while (*str)
-        {
-                str_size++;
-                str++;
-        }
+	{
+		str_size++;
+		str++;
+	}
 	ar = malloc(sizeof(char) * str_size);
 	if (ar == NULL)
 	{
