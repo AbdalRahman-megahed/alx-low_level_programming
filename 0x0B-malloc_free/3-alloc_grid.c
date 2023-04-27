@@ -29,7 +29,7 @@ int **alloc_grid(int width, int height)
 	{
 		while (width)
 		{
-			ar[startw - width][starth - height] == 0;
+			ar[startw - width][starth - height] = 0;
 			width--;
 		}
 		height--;
