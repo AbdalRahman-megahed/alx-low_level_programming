@@ -9,7 +9,12 @@
  * Returns: NULL if NULL.
  */
 
-void free_grid(int **grid, int height __attribute__((unused)))
+void free_grid(int **grid, int height)
 {
-	free(grid);
+	int x;
+	
+	for (x = 0; x < height; x++)
+	{
+		free(grid);
+	}
 }
