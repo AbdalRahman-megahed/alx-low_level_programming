@@ -1,5 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
+#include <string.h>
 /**
 * main - prints the program name.
 * @argc: int.
